@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cataloged</title>
+
+    <style>
+        body {
+        margin: 0;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        color: #333;
+        background: #fff;
+        }
+
+        main {
+        height: 100vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+        .left {
+        max-width: 600px;
+        }
+        
+        .left h1 {
+        font-size: 42px;
+        margin-top: 0;
+        }
+
+        .left p {
+        font-size: 18px;
+        line-height: 1.6;
+        }
+
+        .right img {
+        height: 600px;
+        }
+
+        .footer {
+        padding: 20px 0;
+        font-size: 14px;
+        border-top: 1px solid #eee;
+        }
+
+        a {
+        color: #177D7B;
+        }
+
+        a:hover {
+        color: #0a4e4d;
+        }
+
+        @media (max-width: 800px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .left h1 {
+            font-size: 36px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="left">
+            <h1>Cataloged</h1>
+            <p>Cataloged is a simple way to keep track of your reading life. Save the books you’ve read,
+            keep a list of what you want to read next, and see everything organized in one place.
+            Add and rate books quickly, filter and search your library, and import your reading
+            history from StoryGraph to pick up right where you left off.</p>
+
+            <div class="footer">
+                <a href="mailto:lexinamer@gmail.com">Get in Touch</a> ·
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+
+        <div class="right">
+        <img src="app.png" alt="Cataloged app screenshot" />
+        </div>
+    </main>
+</body>
+</html>
