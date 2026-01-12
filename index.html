@@ -7,59 +7,72 @@
 
     <style>
         body {
-        margin: 0;
-        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-        color: #333;
-        background: #fff;
+            margin: 0;
+            font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+            color: #333;
+            background: #fff;
         }
 
         main {
-        height: 100vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
 
         .left {
-        max-width: 600px;
+            max-width: 600px;
         }
         
-        .left h1 {
-        font-size: 42px;
-        margin-top: 0;
+        h1 {
+            font-size: 42px;
+            margin-top: 0;
         }
 
-        .left p {
-        font-size: 18px;
-        line-height: 1.6;
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .right img {
-        height: 600px;
+            height: 600px;
         }
 
         .footer {
-        padding: 20px 0;
-        font-size: 14px;
-        border-top: 1px solid #eee;
+            padding: 20px 0;
+            font-size: 14px;
+            border-top: 1px solid #eee;
         }
 
         a {
-        color: #177D7B;
+            color: #177D7B;
         }
 
         a:hover {
-        color: #0a4e4d;
+            color: #0a4e4d;
         }
 
-        @media (max-width: 800px) {
-        .content {
-            flex-direction: column;
-        }
+        @media (max-width: 767px) {
+            main {
+                flex-direction: column;
+                flex-direction: column-reverse;
+                padding: 0 25px 25px 25px;
+                justify-content: center;
+                gap: 25px;
+            }
 
-        .left h1 {
-            font-size: 36px;
-        }
+            .right img {
+                height: 300px;
+            }
+
+
+            h1 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 17px;
+            }
         }
     </style>
 </head>
